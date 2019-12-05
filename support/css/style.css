@@ -1,0 +1,239 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.clearfix {
+	clear: both;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555557;
+	margin-bottom: 20px;
+}
+h1 {
+	font-size: 22px;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555557;
+	font-size: 13px;
+	background: #fff;
+}
+a {
+	color: #555557;
+	text-decoration: none;
+}
+a:focus {
+	outline: 0;
+	border: none;
+}
+header {
+	width: 100%;
+	height: 100px;
+	color: #fff;
+	padding: 13px 30px 0 30px;
+	background: #C00D0E;
+}
+header a{
+	color: #fff;
+}
+header .author{
+	float: left;
+}
+header .author figure > a{
+	float: left;
+	width: 75px;
+	margin-right: 15px;
+}
+header .author figcaption {
+	float: left;
+	padding-top: 8px;
+}
+header .author figcaption h5{
+	margin: 0;
+}
+header .author figcaption > a{
+	text-transform: uppercase;
+	font-size: 10px;
+}
+header .likeus{
+	float: left;
+	padding: 9px 0 0 100px;
+}
+header .likeus a{
+	display: block;
+	padding: 10px 20px 10px 43px;
+	text-transform: uppercase;
+	font-size: 14px;
+	background: #3c599b;
+	position: relative;
+}
+header .likeus a:before{
+	content: "";
+	width: 8px;
+	height: 16px;
+	left: 20px;
+	top: 10px;
+	position: absolute;
+	background: url(../images/facebook.png) no-repeat 0 0;
+}
+header .contactinfo{
+	float: right;
+	padding-top: 7px;
+	text-align: right;
+}
+header .contactinfo a{
+	font-size: 14px;
+	font-weight: bold;
+}
+header .contactinfo p{
+	font-size: 11px;
+	padding-top: 5px;
+	text-transform: uppercase;
+}
+.container {
+	width: 100%;
+	position: relative;
+}
+.container aside{
+	width: 300px;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 30px;
+	background: #F6F6F6;
+	border-right: #D7D7D8 solid 1px;
+}
+aside .navi{
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+}
+aside .navi h5{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+aside nav{
+	width: 100%;
+}
+aside nav a{
+	width: 100%;
+	display: block;
+	padding: 5px 0;
+}
+.container .contents{
+	width: 100%;
+	float: left;
+	padding: 30px 30px 30px 331px;
+}
+.sections{
+	width: 100%;
+	padding: 30px 0px 0px 0px;
+	border-bottom: 1px solid #D7D7D8;
+}
+.contents .sections:first-child{
+	padding-top: 0px;
+}
+.sections .heading{
+	float: left;
+}
+.sections .gotop{
+	float: left;
+	margin-top: 2px;
+	margin-left: 20px;
+	background: #717171;
+}
+.sections p{
+	width: 100%;
+	padding: 0px 0px 20px 0px;
+}
+.sections h5{
+	margin-bottom: 10px;
+}
+.highlighted{
+	background: #fcff11;
+}
+table {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+table th{
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	padding: 10px;
+	background: #717171;
+	text-align: left;
+	border-collapse: collapse !important;
+}
+table th.link{
+	text-align: center;
+}
+table td{
+	padding: 10px;
+	margin: 0;
+	border-collapse: collapse !important;
+	border-top: #e2e1e6 solid 1px;
+}
+table td.name{
+	font-weight: bold;
+	width: 20%;
+}
+table td.desc{
+	width: 70%;
+}
+table td.link{
+	width: 10%;
+	text-align: center;
+}
+a.smallbtn {
+	border-radius: 3px;
+	color: #fff;
+	padding: 3px 5px;
+	font-size: 10px;
+	text-transform: uppercase;
+	background: #13a4e7;
+}
+.bold {
+	font-weight: bold;
+}
+ol {
+	padding: 0 0 30px 30px;
+}
+.shots {
+	width: 100%;
+	margin: 10px 0;
+}
