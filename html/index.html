@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reselience Lab</title>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Full Calender CSS -->
+	<link href="css/fullcalendar.css" rel="stylesheet">
+	<!-- Owl Carousel CSS -->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<!-- Pretty Photo CSS -->
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<!-- Bx-Slider StyleSheet CSS -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet"> 
+	<!-- Font Awesome StyleSheet CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="svg/style.css" rel="stylesheet">
+	<!-- Widget CSS -->
+	<link href="css/widget.css" rel="stylesheet">
+	<!-- Typography CSS -->
+	<link href="css/typography.css" rel="stylesheet">
+	<!-- Shortcodes CSS -->
+	<link href="css/shortcodes.css" rel="stylesheet">
+	<!-- Custom Main StyleSheet CSS -->
+	<link href="style.css" rel="stylesheet">
+	<!-- Color CSS -->
+	<link href="css/color.css" rel="stylesheet">
+	<!-- Responsive CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+	<!-- SELECT MENU -->
+	<link href="css/selectric.css" rel="stylesheet">
+	<!-- SIDE MENU -->
+	<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+</head>
+
+<body>
+	<!--KF KODE WRAPPER WRAP START-->
+    <div class="kode_wrapper">
+    <!-- register Modal -->
+    <div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-content">
+            	<!--SIGNIN AS USER START-->
+                <div class="user-box">
+                	<h2>Sign up as a User</h2>
+                    <!--FORM FIELD START-->
+                    <div class="form">
+                        <div class="input-container">
+                            <input type="text" placeholder="Name">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" placeholder="E-mail">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Password">
+                            <i class="fa fa-unlock"></i>
+                        </div>
+                        <div class="input-container">
+                            <label>
+                                <span class="radio">
+                                    <input type="checkbox" name="foo" value="1" checked>
+                                    <span class="radio-value" aria-hidden="true"></span>
+                                </span>
+                                <span>Remember me</span>
+                            </label>
+                        </div>
+                        <div class="input-container">
+                            <button class="btn-style">Sign Up</button>
+                        </div>
+                    </div>
+                    <!--FORM FIELD END-->
+                    <!--OPTION START-->
+                    <div class="option">
+                        <h5>Or Using</h5>
+                    </div>
+                    <!--OPTION END-->
+                    <!--OPTION START-->
+                    <div class="social-login">
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>
+                    </div>
+                    <!--OPTION END-->
+                </div>
+                <!--SIGNIN AS USER END-->
+                <div class="user-box-footer">
+                    Already have an account? <a href="#">Sign In</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- register Modal end-->
+    
+    <!-- SIGNIN MODEL START -->
+    <div class="modal fade" id="signin-box" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-content">
+                <div class="user-box">
+                    <h2>Sign In</h2>
+                    <!--FORM FIELD START-->
+                    <div class="form">
+                        <div class="input-container">
+                            <input type="text" placeholder="E-mail">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Password">
+                            <i class="fa fa-unlock"></i>
+                        </div>
+                        <div class="input-container">
+                            <label>
+                                <span class="radio">
+                                    <input type="checkbox" name="foo" value="1" checked>
+                                    <span class="radio-value" aria-hidden="true"></span>
+                                </span>
+                                <span>Remember me</span>
+                            </label>
+                        </div>
+                        <div class="input-container">
+                            <button class="btn-style">Sign In</button>
+                        </div>
+                    </div>
+                    <!--FORM FIELD END-->
+                    <!--OPTION START-->
+                    <div class="option">
+                        <h5>Or Using</h5>
+                    </div>
+                    <!--OPTION END-->
+                    <!--OPTION START-->
+                    <div class="social-login">
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>
+                    </div>
+                    <!--OPTION END-->
+                
+                </div>
+                <div class="user-box-footer">
+                    <p>Don't have an account?<br><a href="#">Sign up as a User</a></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- SIGNIN MODEL END -->
+    
+	<div id="sidr">
+		<div class="logo_wrap">
+			<a href="#"><img src="extra-images/logo.png" alt=""></a>
+		</div>
+		<div class="clearfix clear"></div>
+		<!-- Your content -->
+		<div class="kf-sidebar">
+			<!--KF_SIDEBAR_SEARCH_WRAP START-->
+			<div class="widget widget-search">
+				<h2>Search Course</h2>
+				<form>
+					<input type="search" placeholder="Keyword...">
+				</form>
+			</div>
+			<!--KF_SIDEBAR_SEARCH_WRAP END-->
+
+			<!--KF_SIDEBAR_ARCHIVE_WRAP START-->
+			<div class="widget widget-archive ">
+				<h2>Archives</h2>
+				<ul class="sidebar_archive_des">
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>January 2019</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>February 2019</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>March 2019</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>April 2019</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>May 2019</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>June 2019</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>August 2019</a>
+					</li>
+				</ul>
+			</div>
+			<!--KF_SIDEBAR_ARCHIVE_WRAP END-->
+
+			<p class="copy-right-sidr">Design and Developed by Udit Bhatia @ All Rights Reserved by IIT GN</p>
+		</div>
+	</div>
+    	<!--HEADER START-->
+    	<header id="header_2">
+    		<!--kode top bar start-->
+    		<div class="top_bar_2">
+	    		<div class="container">
+	    			<div class="row">
+	    				<div class="col-md-5">
+	    					<div class="pull-left">
+	    						<em class="contct_2"><i class="fa fa-phone"></i> Call Us  on 123456789</em>
+	    					</div>
+	    				</div>
+	    				<div class="col-md-7">
+    						<div class="lng_wrap">
+	    						<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<i class="fa fa-globe"></i>Language
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										<li><a href="#"><i><img src="images/english.jpg" alt=""></i>English</a></li>
+										<li><a href="#"><i><img src="images/german.jpg" alt=""></i>Hindi</a></li> 
+									</ul>
+								</div>
+	    					</div>
+    						<ul class="login_wrap">
+    							<li><a href="#" data-toggle="modal" data-target="#reg-box"><i class="fa fa-user"></i>Register</a></li>
+    							<li><a href="#" data-toggle="modal" data-target="#signin-box"><i class="fa fa-sign-in"></i>Sign In</a></li>
+    						</ul>	    					
+	    					<ul class="top_nav">
+	    						<li><a href="..dblog-detail.html">News</a></li>
+	    						<li><a href="..ddevent-detail.html">Event</a></li>
+	    						<li><a href="..ddour-courses.html">Giving</a></li>
+	    						<li><a href="..dcontactus.html">contact us</a></li>
+	    					</ul>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+    		<!--kode top bar end-->
+        	
+	    	<!--kode navigation start-->
+    		<div class="kode_navigation">
+    			<div id="mobile-header">
+                	<a id="responsive-menu-button" href="#sidr-main"><i class="fa fa-bars"></i></a>
+                </div>
+    			<div class="container">
+    				<div class="row">
+    					<div class="col-md-2">
+    						<div class="logo_wrap">
+    							<a href="#"><img src="extra-images/logo_2.png" alt=""></a>
+    						</div>
+    					</div>
+    					<div class="col-md-10">
+    						<!--kode nav_2 start-->
+    						<div class="nav_2" id="navigation">
+    							<ul>
+    								<li><a href="index.html">home</a></li>
+									<li><a href="...baboutus.html">About Us</a></li>
+		                            <li><a href="#">Event</a>
+		                            	<ul>
+		                                    <li><a href="four-effffvent.html">our Event</a></li>
+		                                    <li><a href="f-list.html">Event List</a></li>
+		                                    <li><a href="efvefnt-detail.html">Event Detail</a></li>
+		                                </ul>
+		                            </li>
+		                            <li><a href="f#">Blog</a>
+		                            	<ul>
+		                                    <li><a href="..our-bfflog.html">our Blog</a></li>
+		                                    <li><a href="..blogf-2f-column.html">blog 2 column</a></li>
+		                                    <li><a href="..blog-f3-column.html">blog 3 column</a></li>
+		                                    <li><a href="..blog-lfeft-sidebar.html">blog with left sidebar</a></li>
+		                                    <li><a href="..blog-rifght-sidebar.html">blog with right sidebar</a></li>
+		                                    <li><a href="..blog-detfail.html">blog-detail</a></li>
+		                                </ul>
+		                            </li>
+		                            <li><a href="#">Course</a>
+		                            	<ul>
+		                                	<li><a href="..our-courses.html">Our Course</a></li>
+		                                    <li><a href="..courses-list.html">Course List</a></li>
+		                                	<li><a href="..courses-detail.html">Course Detail</a></li>
+		                                </ul>
+		                            </li>
+		                            <li><a href="#">People</a>
+		                            	<ul>
+		                                	<li><a href="...our-tfeacher.html">Lab members</a></li>
+		                                    <li><a href=https://www.iitgn.ac.in/faculty/civil/udit.htm>Lab Incharge</a></li>
+		                                </ul>
+		                            </li>
+		                            <li><a href="#">Gallery</a>
+		                            	<ul>
+		                                	<li><a href="galffflery-masonary-2col.html">Masonary 2 Col </a></li>
+		                                	<li><a href="gallfery-masonary.html">Masonary 3 Col </a></li>
+		                                	<li><a href="f-masonary-4col.html">Masonary 4 Col </a></li>
+		                                    <li><a href="f-gallery.html">Simple gallery</a></li>
+		                                </ul>
+		                            </li>
+									<li><a href="#">Pages</a>
+		                            	<ul>
+		                                    <li><a href="404.html">404 Page</a></li>
+		                                </ul>
+		                            </li>
+									<li><a href="#">Contact US</a>
+		                            	<ul>
+		                                    <li><a href="f.html">Contact Us 1</a></li>
+		                                    <li><a href="contactfus-2.html">Contact Us 2</a></li>
+		                                </ul>
+		                            </li>
+		                            <li><a id="simple-menu" href="#sidr"><i class="fa fa-bars"></i></a></li>
+    							</ul>
+    						</div>
+    						<!--kode nav_2 end-->
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		<!--kode navigation end-->
+		</header>
+		<!--HEADER END-->
+
+
+		<div class="edu2_main_bn_wrap">
+			<div id="owl-demo-main" class="owl-carousel owl-theme">
+				<div class="item">
+					<figure>
+						<img src="extra-images/slider1.jpg" alt=""/>
+						<figcaption>
+							<span>Indian Institute of technology, Gandhinagar</span>
+							<h2>Welcome to our resilience lab website</h2>
+							<p>We Belive in smartwork than hardwork</p>
+							<a href="#" class="btn-1">read more</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="extra-images/slider2.jpg" alt=""/>
+						<figcaption>
+							<span>Indian Institute of technology, Gandhinagar</span>
+							<h2>Welcome to our resilience lab website</h2>
+							<p>We Belive in smartwork than hardwork</p>
+							<a href="#" class="btn-1">read more</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="extra-images/slider3.jpg" alt=""/>
+						<figcaption>
+							<span>Indian Institute of technology, Gandhinagar</span>
+							<h2>Welcome to our resilience lab website</h2>
+							<p>We Belive in smartwork than hardwork</p>
+							<a href="#" class="btn-1">read more</a>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="kf_content_wrap">
+
+
+			<!--COUNTER SECTION START-->
+			<section class="edu2_counter_wrap">
+				<div class="container">
+					<!--EDU2 COUNTER DES START-->
+					<div class="edu2_counter_des">
+						<span><i class="icon-group2"></i></span>
+						<h3 class="counter">100</h3>
+						<h5>Lab Members</h5>
+					</div>
+					<!--EDU2 COUNTER DES END-->
+					<!--EDU2 COUNTER DES START-->
+					<div class="edu2_counter_des">
+						<span><i class="icon-book236"></i></span>
+						<h3 class="counter">5</h3>
+						<h5>Courses</h5>
+					</div>
+					<!--EDU2 COUNTER DES END-->
+					<!--EDU2 COUNTER DES START-->
+					<div class="edu2_counter_des">
+						<span><i class="icon-win5"></i></span>
+						<h3 class="counter">10,000</h3>
+						<h5>STUDENTS ENROLLED</h5>
+					</div>
+					<!--EDU2 COUNTER DES END-->
+					<!--EDU2 COUNTER DES START-->
+					<div class="edu2_counter_des">
+						<span><i class=" icon-user255"></i></span>
+						<h3 class="counter">100</h3>
+						<h5>Publications</h5>
+					</div>
+					<!--EDU2 COUNTER DES END-->
+				</div>
+			</section>
+			<!--COUNTER SECTION END-->
+
+			<!-- LATEST NEWS AND EVENT WRAP START-->
+			<section class="edu2_new_wrap">
+				<div class="container">
+					<!-- HEADING 2 START-->
+					<div class="col-md-12">
+						<div class="kf_edu2_heading2">
+							<h3>Latest News &amp; Event</h3>
+						</div>
+					</div>
+					<!-- HEADING 2 END-->
+					<div class="row">
+						<!-- EDU2 NEW DES START-->
+						<div class="col-md-6">
+							<div class="edu2_new_des">
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="edu2_event_des">
+											<h4>May</h4>
+											<p>News</p>
+											<ul class="post-option">
+ 												<li>By<a href="#">Admin</a></li>
+ 												<li>03/05/2019</li>
+ 												<li><a href="#">21 Comments</a></li>
+											</ul>
+											<a href="#" class="readmore">read more<i class="fa fa-long-arrow-right"></i></a>
+											<span>24</span>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 thumb">
+										<figure><img src="extra-images/news1.jpg" alt=""/>
+											<figcaption><a href="blog-deftail.html"><i class="fa fa-plus"></i></a></figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EDU2 NEW DES END-->
+
+						<!-- EDU2 NEW DES START-->
+						<div class="col-md-6">
+							<div class="edu2_new_des">
+								<div class="row">
+									<div class="col-md-6 col-sm-6 thumb">
+										<figure><img src="extra-images/news2.jpg" alt=""/>
+											<figcaption><a href="blog-detfail.html"><i class="fa fa-plus"></i></a></figcaption>
+										</figure>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="edu2_event_des text-right">
+											<h4>May</h4>
+											<p>News</p>
+											<ul class="post-option">
+ 												<li>By<a href="#">Admin</a></li>
+ 												<li>03/05/2019</li>
+ 												<li><a href="#">21 Comments</a></li>
+											</ul>
+											<a href="#" class="readmore">read more<i class="fa fa-long-arrow-right"></i></a>
+											<span>03</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EDU2 NEW DES END-->
+
+						<!-- EDU2 NEW DES START-->
+						<div class="col-md-6">
+							<div class="edu2_new_des">
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<div class="edu2_event_des">
+											<h4>May</h4>
+											<p>News</p>
+											<ul class="post-option">
+ 												<li>By<a href="#">Admin</a></li>
+ 												<li>03/05/2019</li>
+ 												<li><a href="#">21 Comments</a></li>
+											</ul>
+											<a href="#" class="readmore">read more<i class="fa fa-long-arrow-right"></i></a>
+											<span>31</span>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 thumb">
+										<figure><img src="extra-images/news3.jpg" alt=""/>
+											<figcaption><a href="blog-detailf.html"><i class="fa fa-plus"></i></a></figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EDU2 NEW DES END-->
+
+						<!-- EDU2 NEW DES START-->
+						<div class="col-md-6">
+							<div class="edu2_new_des">
+								<div class="row">
+									<div class="col-md-6 col-sm-6 thumb">
+										<figure><img src="extra-images/news4.jpg" alt=""/>
+											<figcaption><a href="blog-detafil.html"><i class="fa fa-plus"></i></a></figcaption>
+										</figure>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="edu2_event_des text-right">
+											<h4>May</h4>
+											<p>News</p>
+											<ul class="post-option">
+ 												<li>By<a href="#">Admin</a></li>
+ 												<li>03/05/2019</li>
+ 												<li><a href="#">21 Comments</a></li>
+											</ul>
+											<a href="#" class="readmore">read more<i class="fa fa-long-arrow-right"></i></a>
+											<span>11</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- EDU2 NEW DES END-->
+					</div>
+				</div>
+			</section>
+			<!-- LATEST NEWS AND EVENT WRAP END-->
+
+
+			<!--GALLERY SECTION START-->
+			<section class="kode-gallery-section">
+				<!-- HEADING 2 START-->
+                <div class="col-md-12">
+                    <div class="kf_edu2_heading2">
+                        <h3>Our Gallery</h3>
+						<p>Gallery of the this year SRIP students</p>
+                    </div>
+                </div>
+                <!-- HEADING 2 END-->
+                <!-- EDU2 GALLERY WRAP START-->
+                <div class="edu2_gallery_wrap gallery">
+                   
+                    <!-- EDU2 GALLERY DES START-->
+                    <div class="gallery3">
+                    
+                        <div class="filterable-item all 2 1 9 col-md-3 col-sm-4 col-xs-12 no_padding">
+                            <div class="edu2_gallery_des">
+                                <figure>
+                                    <img alt="" src="extra-images/home-gallery1.jpg">
+                                    <figcaption>
+                                        <a data-rel="prettyPhoto[gallery2]" href="extra-images/home-gallery1.jpg"><i class="fa fa-eye"></i></a>
+                                        <a href="#"><i class="fa fa-link"></i></a>
+                                        <h5>person</h5>
+                                        <p>img</p>
+                                    </figcaption>
+                                </figure>
+                            </div>	
+                        </div>
+                        <div class="filterable-item all 3 2 1 col-md-3 col-sm-4 col-xs-12 no_padding">
+                            <div class="edu2_gallery_des">
+                                <figure>
+                                    <img alt="" src="extra-images/home-gallery2.jpg">
+                                    <figcaption>
+                                        <a data-rel="prettyPhoto[gallery2]" href="extra-images/home-gallery2.jpg"><i class="fa fa-eye"></i></a>
+                                        <a href="#"><i class="fa fa-link"></i></a>
+                                        <h5>person</h5>
+                                        <p>example</p>
+                                    </figcaption>
+                                </figure>
+                            </div>	
+                        </div>
+                        <div class="filterable-item all 4 2 9 col-md-3 col-sm-4 col-xs-12 no_padding">
+                            <div class="edu2_gallery_des">
+                                <figure>
+                                    <img alt="" src="extra-images/home-gallery3.jpg">
+                                    <figcaption>
+                                        <a data-rel="prettyPhoto[gallery2]" href="extra-images/home-gallery3.jpg"><i class="fa fa-eye"></i></a>
+                                        <a href="#"><i class="fa fa-link"></i></a>
+                                        <h5>person</h5>
+                                        <p>img</p>
+                                    </figcaption>
+                                </figure>
+                            </div>	
+                        </div>
+                        <div class="filterable-item all 9 8 7 col-md-3 col-sm-4 col-xs-12 no_padding">
+                            <div class="edu2_gallery_des">
+                                <figure>
+                                    <img alt="" src="extra-images/home-gallery4.jpg">
+                                    <figcaption>
+                                        <a data-rel="prettyPhoto[gallery2]" href="extra-images/home-gallery4.jpg"><i class="fa fa-eye"></i></a>
+                                        <a href="#"><i class="fa fa-link"></i></a>
+                                        <h5>person</h5>
+                                        <p>img</p>
+                                    </figcaption>
+                                </figure>
+                            </div>	
+                        </div>
+                        <div class="filterable-item all 3 2 4 col-md-3 col-sm-4 col-xs-12 no_padding">
+                            <div class="edu2_gallery_des">
+                                <figure>
+                                    <img alt="" src="extra-images/home-gallery5.jpg">
+                                    <figcaption>
+                                        <a data-rel="prettyPhoto[gallery2]" href="extra-images/home-gallery5.jpg"><i class="fa fa-eye"></i></a>
+                                        <a href="#"><i class="fa fa-link"></i></a>
+                                        <h5>person</h5>
+                                        <p>img</p>
+                                    </figcaption>
+                                </figure>
+                            </div>	
+                        </div>
+                        <div class="filterable-item all 4 5 7 col-md-3 col-sm-4 col-xs-12 no_padding">
+                            <div class="edu2_gallery_des">
+                                <figure>
+                                    <img alt="" src="extra-images/home-gallery6.jpg">
+                                    <figcaption>
+                                        <a data-rel="prettyPhoto[gallery2]" href="extra-images/home-gallery6.jpg"><i class="fa fa-eye"></i></a>
+                                        <a href="#"><i class="fa fa-link"></i></a>
+                                        <h5>person</h5>
+                                        <p>img</p>
+                                    </figcaption>
+                                </figure>
+                            </div>	
+                        </div>
+                        <div class="filterable-item all 3 5 7 9 col-md-3 col-sm-4 col-xs-12 no_padding">
+                            <div class="edu2_gallery_des">
+                                <figure>
+                                    <img alt="" src="extra-images/home-gallery7.jpg">
+                                    <figcaption>
+                                        <a data-rel="prettyPhoto[gallery2]" href="extra-images/home-gallery7.jpg"><i class="fa fa-eye"></i></a>
+                                        <a href="#"><i class="fa fa-link"></i></a>
+                                        <h5>person</h5>
+                                        <p>img</p>
+                                    </figcaption>
+                                </figure>
+                            </div>	
+                        </div>
+                        <div class="filterable-item all 2 4 6 8 col-md-3 col-sm-4 col-xs-12 no_padding">
+                            <div class="edu2_gallery_des">
+                                <figure>
+                                    <img alt="" src="extra-images/home-gallery3.jpg">
+                                    <figcaption>
+                                        <a data-rel="prettyPhoto[gallery2]" href="extra-images/home-gallery3.jpg"><i class="fa fa-eye"></i></a>
+                                        <a href="#"><i class="fa fa-link"></i></a>
+                                        <h5>person</h5>
+                                        <p>img</p>
+                                    </figcaption>
+                                </figure>
+                            </div>	
+                        </div>
+                    </div>
+                    
+                <!-- EDU2 GALLERY WRAP END-->
+                </div>
+                <div class="loadmore">
+						<a href="#" class="btn-3">Load More</a>
+					</div>
+			</section>
+			<!--GALLERY SECTION END-->
+
+
+			
+
+
+
+
+
+			<!--OUR TESTEMONIAL WRAP START-->
+			<section>
+				<div class="container">
+					<div class="row">
+						<!-- HEADING 2 START-->
+						<div class="col-md-12">
+							<div class="kf_edu2_heading2">
+								<h3>Our Testimonial</h3>
+							</div>
+						</div>
+						<!-- HEADING 2 END-->
+						<!-- TESTEMONIAL SLIDER WRAP START-->
+						<div class="edu2_testemonial_slider_wrap">
+							<div id="owl-demo-9">
+								<div class="item">
+									<!-- TESTEMONIAL SLIDER WRAP START-->
+									<div class="edu_testemonial_wrap">
+										<figure><img src="extra-images/testemonial.1.jpg" alt=""/></figure>
+										<div class="kode-text">
+											<p>sample testimonial...</p>
+											<a href="#">Akash Awasthi<span>- Research Intern</span></a>
+										</div>
+									</div>
+									<!-- TESTEMONIAL SLIDER WRAP END-->
+								</div>
+
+								<div class="item">
+									<!-- TESTEMONIAL SLIDER WRAP START-->
+									<div class="edu_testemonial_wrap">
+										<figure><img src="extra-images/testemonial.2.jpg" alt=""/></figure>
+										<div class="kode-text">
+											<p>sample testimonial...</p>
+											<a href="#">Madhu Vamsi<span>- Research Intern</span></a>
+										</div>
+									</div>
+									<!-- TESTEMONIAL SLIDER WRAP END-->
+								</div>
+
+								<div class="item">
+									<!-- TESTEMONIAL SLIDER WRAP START-->
+									<div class="edu_testemonial_wrap">
+										<figure><img src="extra-images/testemonial.1.jpg" alt=""/></figure>
+										<div class="kode-text">
+											<p>sample testimonial...</p>
+											<a href="#">Deepak Kamboj<span>- SRIP 2019</span></a>
+										</div>
+									</div>
+									<!-- TESTEMONIAL SLIDER WRAP END-->
+								</div>
+								
+								<div class="item">
+									<!-- TESTEMONIAL SLIDER WRAP START-->
+									<div class="edu_testemonial_wrap">
+										<figure><img src="extra-images/testemonial.2.jpg" alt=""/></figure>
+										<div class="kode-text">
+											<p>sample testimonial...</p>
+											<a href="#">Babin Dutta<span>- SRIP 2019</span></a>
+										</div>
+									</div>
+									<!-- TESTEMONIAL SLIDER WRAP END-->
+								</div>
+
+								<div class="item">
+									<!-- TESTEMONIAL SLIDER WRAP START-->
+									<div class="edu_testemonial_wrap">
+										<figure><img src="extra-images/testemonial.1.jpg" alt=""/></figure>
+										<div class="kode-text">
+											<p>sample testimonial...</p>
+											<a href="#">Ayush Agarwal<span>- SRIP 2019</span></a>
+										</div>
+									</div>
+									<!-- TESTEMONIAL SLIDER WRAP END-->
+								</div>
+								
+								<div class="item">
+									<!-- TESTEMONIAL SLIDER WRAP START-->
+									<div class="edu_testemonial_wrap">
+										<figure><img src="extra-images/testemonial.2.jpg" alt=""/></figure>
+										<div class="kode-text">
+											<p>sample testimonial...</p>
+											<a href="#">Anushman<span>- SRIP 2019</span></a>
+										</div>
+									</div>
+									<!-- TESTEMONIAL SLIDER WRAP END-->
+								</div>
+							</div>
+						</div>
+						<!-- TESTEMONIAL SLIDER WRAP END-->
+					</div>
+				</div>
+			</section>
+			<!--OUR TESTEMONIAL WRAP END-->
+		</div>
+
+		<!--EDU2 FOOTER WRAP START-->
+		<!--NEWS LETTERS START-->
+		<div class="edu2_ft_topbar_wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="edu2_ft_topbar_des">
+							<h5>Subcribe weekly newsletter</h5>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="edu2_ft_topbar_des">
+							<form>
+								<input type="email" placeholder="Enter Valid Email Address">
+								<button><i class="fa fa-paper-plane"></i>Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--NEWS LETTERS END-->
+		<!--COPYRIGHTS START-->
+		<div class="edu2_copyright_wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="edu2_ft_logo_wrap">
+							<a href="#"><img src="extra-images/ft_logo.png" alt=""/></a>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="copyright_des">
+							<span>&copy; All Rights reserved. Powered By <a href="#">Udit Bhatia</a></span>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		<!--COPYRIGHTS START-->
+    </div>
+    <!--KF KODE WRAPPER WRAP END-->
+	<!--Bootstrap core JavaScript-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--Bx-Slider JavaScript-->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!--Owl Carousel JavaScript-->
+	<script src="js/owl.carousel.min.js"></script>
+	<!--Pretty Photo JavaScript-->
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<!--Full Calender JavaScript-->
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/jquery.downCount.js"></script>
+	<!--Image Filterable JavaScript-->
+	<script src="js/jquery-filterable.js"></script>
+	<!--Accordian JavaScript-->
+	<script src="js/jquery.accordion.js"></script>
+	<!--Number Count (Waypoints) JavaScript-->
+	<script src="js/waypoints-min.js"></script>
+	<!--v ticker-->
+	<script src="js/jquery.vticker.min.js"></script>
+	<!--select menu-->
+	<script src="js/jquery.selectric.min.js"></script>
+	<!--Side Menu-->
+	<script src="js/jquery.sidr.min.js"></script>
+	<!--Custom JavaScript-->
+	<script src="js/custom.js"></script>
+
+    
+</body>
+</html>

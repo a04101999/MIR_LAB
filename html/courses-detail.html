@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Courses Details</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Full Calender CSS -->
+	<link href="css/fullcalendar.css" rel="stylesheet">
+	<!-- Owl Carousel CSS -->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<!-- Pretty Photo CSS -->
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<!-- Bx-Slider StyleSheet CSS -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet"> 
+	<!-- Font Awesome StyleSheet CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="svg/style.css" rel="stylesheet">
+	<!-- Widget CSS -->
+	<link href="css/widget.css" rel="stylesheet">
+	<!-- Typography CSS -->
+	<link href="css/typography.css" rel="stylesheet">
+	<!-- Shortcodes CSS -->
+	<link href="css/shortcodes.css" rel="stylesheet">
+	<!-- Custom Main StyleSheet CSS -->
+	<link href="style.css" rel="stylesheet">
+	<!-- Color CSS -->
+	<link href="css/color.css" rel="stylesheet">
+	<!-- Responsive CSS -->
+	<link href="css/responsive.css" rel="stylesheet">
+	<!-- SELECT MENU -->
+	<link href="css/selectric.css" rel="stylesheet">
+	<!-- SIDE MENU -->
+	<link rel="stylesheet" href="css/jquery.sidr.dark.css">
+
+</head>
+
+<body>
+	<!--KF KODE WRAPPER WRAP START-->
+    <div class="kode_wrapper">
+    <!-- register Modal -->
+    <div class="modal fade" id="reg-box" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-content">
+            	<!--SIGNIN AS USER START-->
+                <div class="user-box">
+                	<h2>Sign up as a User</h2>
+                    <!--FORM FIELD START-->
+                    <div class="form">
+                        <div class="input-container">
+                            <input type="text" placeholder="Name">
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" placeholder="E-mail">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Password">
+                            <i class="fa fa-unlock"></i>
+                        </div>
+                        <div class="input-container">
+                            <label>
+                                <span class="radio">
+                                    <input type="checkbox" name="foo" value="1" checked>
+                                    <span class="radio-value" aria-hidden="true"></span>
+                                </span>
+                                <span>Remember me</span>
+                            </label>
+                        </div>
+                        <div class="input-container">
+                            <button class="btn-style">Sign Up</button>
+                        </div>
+                    </div>
+                    <!--FORM FIELD END-->
+                    <!--OPTION START-->
+                    <div class="option">
+                        <h5>Or Using</h5>
+                    </div>
+                    <!--OPTION END-->
+                    <!--OPTION START-->
+                    <div class="social-login">
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>
+                    </div>
+                    <!--OPTION END-->
+                </div>
+                <!--SIGNIN AS USER END-->
+                <div class="user-box-footer">
+                    Already have an account? <a href="#">Sign In</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- register Modal end-->
+    
+    <!-- SIGNIN MODEL START -->
+    <div class="modal fade" id="signin-box" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-content">
+                <div class="user-box">
+                    <h2>Sign In</h2>
+                    <!--FORM FIELD START-->
+                    <div class="form">
+                        <div class="input-container">
+                            <input type="text" placeholder="E-mail">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" placeholder="Password">
+                            <i class="fa fa-unlock"></i>
+                        </div>
+                        <div class="input-container">
+                            <label>
+                                <span class="radio">
+                                    <input type="checkbox" name="foo" value="1" checked>
+                                    <span class="radio-value" aria-hidden="true"></span>
+                                </span>
+                                <span>Remember me</span>
+                            </label>
+                        </div>
+                        <div class="input-container">
+                            <button class="btn-style">Sign In</button>
+                        </div>
+                    </div>
+                    <!--FORM FIELD END-->
+                    <!--OPTION START-->
+                    <div class="option">
+                        <h5>Or Using</h5>
+                    </div>
+                    <!--OPTION END-->
+                    <!--OPTION START-->
+                    <div class="social-login">
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i>Google Account</a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i>Facebook Account</a>
+                    </div>
+                    <!--OPTION END-->
+                
+                </div>
+                <div class="user-box-footer">
+                    <p>Don't have an account?<br><a href="#">Sign up as a User</a></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- SIGNIN MODEL END -->
+    
+    <div id="sidr">
+		<div class="logo_wrap">
+			<a href="#"><img src="extra-images/logo.png" alt=""></a>
+		</div>
+		<div class="clearfix clear"></div>
+		<!-- Your content -->
+		<div class="kf-sidebar">
+			<!--KF_SIDEBAR_SEARCH_WRAP START-->
+			<div class="widget widget-search">
+				<h2>Search Course</h2>
+				<form>
+					<input type="search" placeholder="Keyword...">
+				</form>
+			</div>
+			<!--KF_SIDEBAR_SEARCH_WRAP END-->
+
+			<!--KF_SIDEBAR_ARCHIVE_WRAP START-->
+			<div class="widget widget-archive ">
+				<h2>Archives</h2>
+				<ul class="sidebar_archive_des">
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>January 2016</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>February 2016</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>March 2016</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>April 2016</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>May 2016</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>June 2016</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-right"></i>August 2016</a>
+					</li>
+				</ul>
+			</div>
+			<!--KF_SIDEBAR_ARCHIVE_WRAP END-->
+
+			<p class="copy-right-sidr">Design and Developed by KodeForest @ All Rights Reserved by KodeForest</p>
+		</div>
+	</div>
+    	<!--HEADER START-->
+    	<header id="header_2">
+    		<!--kode top bar start-->
+    		<div class="top_bar_2">
+	    		<div class="container">
+	    			<div class="row">
+	    				<div class="col-md-5">
+	    					<div class="pull-left">
+	    						<em class="contct_2"><i class="fa fa-phone"></i> Call Us  on 0800 123 46 4747</em>
+	    					</div>
+	    				</div>
+	    				<div class="col-md-7">
+    						<div class="lng_wrap">
+	    						<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<i class="fa fa-globe"></i>Language
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										<li><a href="#"><i><img src="images/english.jpg" alt=""></i>English</a></li>
+										<li><a href="#"><i><img src="images/german.jpg" alt=""></i>German</a></li> 
+									</ul>
+								</div>
+	    					</div>
+    						<ul class="login_wrap">
+    							<li><a href="#" data-toggle="modal" data-target="#reg-box"><i class="fa fa-user"></i>Register</a></li>
+    							<li><a href="#" data-toggle="modal" data-target="#signin-box"><i class="fa fa-sign-in"></i>Sign In</a></li>
+    						</ul>
+	    					<ul class="top_nav">
+	    						<li><a href="blog-detail.html">News</a></li>
+	    						<li><a href="event-detail.html">Event</a></li>
+	    						<li><a href="our-courses.html">Giving</a></li>
+	    						<li><a href="contactus.html">contact us</a></li>
+	    					</ul>
+	    					
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+    		<!--kode top bar end-->
+        	
+	    	<!--kode navigation start-->
+    		<div class="kode_navigation">
+    			<div id="mobile-header">
+                	<a id="responsive-menu-button" href="#sidr-main"><i class="fa fa-bars"></i></a>
+                </div>
+    			<div class="container">
+    				<div class="row">
+    					<div class="col-md-2">
+    						<div class="logo_wrap">
+    							<a href="#"><img src="extra-images/logo_2.png" alt=""></a>
+    						</div>
+    					</div>
+    					<div class="col-md-10">
+    						<!--kode nav_2 start-->
+    						<div class="nav_2" id="navigation">
+    							<ul>
+    								<li><a href="index.html">home</a></li>
+									<li><a href="aboutus.html">About Us</a></li>
+		                            <li><a href="#">Event</a>
+		                            	<ul>
+		                                    <li><a href="our-event.html">our Event</a></li>
+		                                    <li><a href="event-list.html">Event List</a></li>
+		                                    <li><a href="event-detail.html">Event Detail</a></li>
+		                                </ul>
+		                            </li>
+		                            <li><a href="#">Blog</a>
+		                            	<ul>
+		                                    <li><a href="our-blog.html">our Blog</a></li>
+		                                    <li><a href="blog-3-column.html">blog-3-column</a></li>
+		                                    <li><a href="blog-detail.html">blog-detail</a></li>
+		                                </ul>
+		                            </li>
+		                            <li><a href="#">Course</a>
+		                            	<ul>
+		                                	<li><a href="our-courses.html">Our Course</a></li>
+		                                    <li><a href="courses-list.html">Course List</a></li>
+		                                	<li><a href="courses-detail.html">Course Detail</a></li>
+		                                </ul>
+		                            </li>
+		                            <li><a href="#">Teacher</a>
+		                            	<ul>
+		                                	<li><a href="our-teacher.html">Our Teacher</a></li>
+		                                    <li><a href="our-teacher-details.html">our teacher details</a></li>
+		                                </ul>
+		                            </li>
+		                            <li><a href="#">Gallery</a>
+		                            	<ul>
+		                                	<li><a href="gallery-masonary.html">masonary gallery</a></li>
+		                                    <li><a href="filterable-gallery.html">Filterable gallery</a></li>
+		                                </ul>
+		                            </li>
+									<li><a href="#">Pages</a>
+		                            	<ul>
+		                                    <li><a href="404.html">404 Page</a></li>
+		                                </ul>
+		                            </li>
+									<li><a href="#">Contact US</a>
+		                            	<ul>
+		                                    <li><a href="contactus.html">Contact Us 1</a></li>
+		                                    <li><a href="contactus-2.html">Contact Us 2</a></li>
+		                                </ul>
+		                            </li>
+		                            <li><a id="simple-menu" href="#sidr"><i class="fa fa-bars"></i></a></li>
+    							</ul>
+    						</div>
+                            
+    						<!--kode nav_2 end-->
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		<!--kode navigation end-->
+		</header>
+		<!--HEADER END-->
+
+        <!--Banner Wrap Start-->
+        <div class="kf_inr_banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                    	<!--KF INR BANNER DES Wrap Start-->
+                        <div class="kf_inr_ban_des">
+                        	<div class="inr_banner_heading">
+								<h3>Courses Details</h3>
+                        	</div>
+                           
+                            <div class="kf_inr_breadcrumb">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Courses Details</a></li>
+								</ul>
+							</div>
+                        </div>
+                        <!--KF INR BANNER DES Wrap End-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Banner Wrap End-->
+
+    	<!--Content Wrap Start-->
+    	<div class="kf_content_wrap">
+    		<section>
+	 			<div class="container">
+	 				<div class="row">
+	 					<div class="col-md-8">
+
+	 						<!-- COURSES DETAIL WRAP START -->
+	 						<div class="kf_courses_detail_wrap">
+	 							<div class="courses_detail_heading">
+	 								<h4>Learn Spoken English and English Subtitles</h4>
+	 							</div>
+
+	 							<ul class="course_detail_meta">
+	 								<li><i class="fa fa-user"></i><a href="#">John Doe</a></li>
+	 								<li><i class="fa fa-clock-o"></i>Dcember 29, 2015</li>
+	 								<li><i class="fa fa-bookmark"></i><a href="#">Language</a></li>
+	 							</ul>
+
+	 							<div class="course_detail_thumbnail">
+	 								<figure>
+	 									<img src="extra-images/course-thumbnail.jpg" alt=""/>
+	 									<figcaption><a href="#"><i class="fa fa-play"></i></a></figcaption>
+	 								</figure>
+	 							</div>
+
+	 							<!-- COURSES DETAIL TABS WRAP START -->
+	 							<div class="kf_courses_tabs">
+									<!-- Nav tabs -->
+									<ul class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active"><a href="#coursedetails" aria-controls="coursedetails" role="tab" data-toggle="tab">Course Details</a></li>
+										<li role="presentation"><a href="#coursestructure" aria-controls="coursestructure" role="tab" data-toggle="tab">Course Structure</a></li>
+										<li role="presentation"><a href="#entryrequirment" aria-controls="entryrequirment" role="tab" data-toggle="tab">Entry Requirment</a></li>
+										<li role="presentation"><a href="#placements" aria-controls="placements" role="tab" data-toggle="tab">Placements</a></li>
+									</ul>
+
+									<!-- Tab panes -->
+									<div class="tab-content">
+
+										<div role="tabpanel" class="tab-pane active" id="coursedetails">
+
+											<!-- COURSES DETAIL DES START -->
+											<div class="kf_courses_detail_des">
+												<div class="course_heading">
+													<h3>Course Details</h3>
+												</div>
+												<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquet per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+												<p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque</p>
+											</div>
+											<!-- COURSES DETAIL DES END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap">
+												<h6>Study Options</h6>
+												<!--  TABLE  START -->
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>Qualification</th>
+															<th>Length</th>
+															<th>Code</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Bsc (Hons)</td>
+															<td>3 years full time</td>
+															<td>CDX3</td>
+														</tr>
+														<tr>
+															<td>Bsc </td>
+															<td>4 years full time</td>
+															<td>CDX4</td>
+														</tr>
+													</tbody>
+												</table>
+												<!--  TABLE  END -->
+												<h6>English Education Modules</h6>
+												<p>Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque fermentum feugiat velit.</p>
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap">
+												<h6>Projects & Research Intrests</h6>
+
+												<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos. </p>
+
+												<p><b>Nam nec tellus a odio tincidunt :</b> auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit.</p>
+
+												<p><b>Excepteur sint occaecat cupidatat non : </b>auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.This is Photoshop's version  of Lorem Ipsum.</p>
+
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap border_none">
+												<h6>Student’s Destinations</h6>
+												<p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque</p>
+
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+										</div>
+
+										<div role="tabpanel" class="tab-pane" id="coursestructure">
+
+											<!-- COURSES DETAIL DES START -->
+											<div class="kf_courses_detail_des">
+												<div class="course_heading">
+													<h3>Course Structure</h3>
+												</div>
+												<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquet per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+												<p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque</p>
+											</div>
+											<!-- COURSES DETAIL DES END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap">
+												<h6>Study Options</h6>
+												<!--  TABLE  START -->
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>Qualification</th>
+															<th>Length</th>
+															<th>Code</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Bsc (Hons)</td>
+															<td>3 years full time</td>
+															<td>CDX3</td>
+														</tr>
+														<tr>
+															<td>Bsc </td>
+															<td>4 years full time</td>
+															<td>CDX4</td>
+														</tr>
+													</tbody>
+												</table>
+												<!--  TABLE  END -->
+												<h6>English Education Modules</h6>
+												<p>Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque fermentum feugiat velit.</p>
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap">
+												<h6>Projects & Research Intrests</h6>
+
+												<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos. </p>
+
+												<p><b>Nam nec tellus a odio tincidunt :</b> auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit.</p>
+
+												<p><b>Excepteur sint occaecat cupidatat non : </b>auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.This is Photoshop's version  of Lorem Ipsum.</p>
+
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap border_none">
+												<h6>Student’s Destinations</h6>
+												<p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque</p>
+
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+										</div>
+
+										<div role="tabpanel" class="tab-pane" id="entryrequirment">
+
+											<!-- COURSES DETAIL DES START -->
+											<div class="kf_courses_detail_des">
+												<div class="course_heading">
+													<h3>Entry Requirment</h3>
+												</div>
+												<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquet per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+												<p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque</p>
+											</div>
+											<!-- COURSES DETAIL DES END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap">
+												<h6>Study Options</h6>
+												<!--  TABLE  START -->
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>Qualification</th>
+															<th>Length</th>
+															<th>Code</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Bsc (Hons)</td>
+															<td>3 years full time</td>
+															<td>CDX3</td>
+														</tr>
+														<tr>
+															<td>Bsc </td>
+															<td>4 years full time</td>
+															<td>CDX4</td>
+														</tr>
+													</tbody>
+												</table>
+												<!--  TABLE  END -->
+												<h6>English Education Modules</h6>
+												<p>Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque fermentum feugiat velit.</p>
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap">
+												<h6>Projects & Research Intrests</h6>
+
+												<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos. </p>
+
+												<p><b>Nam nec tellus a odio tincidunt :</b> auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit.</p>
+
+												<p><b>Excepteur sint occaecat cupidatat non : </b>auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.This is Photoshop's version  of Lorem Ipsum.</p>
+
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap border_none">
+												<h6>Student’s Destinations</h6>
+												<p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque</p>
+
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+										</div>
+
+										<div role="tabpanel" class="tab-pane" id="placements">
+
+											<!-- COURSES DETAIL DES START -->
+											<div class="kf_courses_detail_des">
+												<div class="course_heading">
+													<h3>Placements</h3>
+												</div>
+												<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquet per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+												<p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque</p>
+											</div>
+											<!-- COURSES DETAIL DES END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap">
+												<h6>Study Options</h6>
+												<!--  TABLE  START -->
+												<table class="table table-bordered">
+													<thead>
+														<tr>
+															<th>Qualification</th>
+															<th>Length</th>
+															<th>Code</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Bsc (Hons)</td>
+															<td>3 years full time</td>
+															<td>CDX3</td>
+														</tr>
+														<tr>
+															<td>Bsc </td>
+															<td>4 years full time</td>
+															<td>CDX4</td>
+														</tr>
+													</tbody>
+												</table>
+												<!--  TABLE  END -->
+												<h6>English Education Modules</h6>
+												<p>Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque fermentum feugiat velit.</p>
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap">
+												<h6>Projects & Research Intrests</h6>
+
+												<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos. </p>
+
+												<p><b>Nam nec tellus a odio tincidunt :</b> auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit.</p>
+
+												<p><b>Excepteur sint occaecat cupidatat non : </b>auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos.This is Photoshop's version  of Lorem Ipsum.</p>
+
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+											<!-- STUDY TABLE WRAP START -->
+											<div class="study_table_wrap border_none">
+												<h6>Student’s Destinations</h6>
+												<p>Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra erat sed fermentum velit mauris egestas quam ut aliquam massa nisl quis neque. Suspendisse in orci enim.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut aliquam massa nisl quis neque</p>
+
+											</div>
+											<!-- STUDY TABLE WRAP END -->
+
+										</div>
+
+									</div>
+	 							</div>
+	 							<!-- COURSES DETAIL TABS WRAP END -->
+								
+								<div class="blog_thumb_wrap">
+									<div class="study_table_wrap">
+										<h6>Course Gallery</h6>
+									</div>
+									<div class="row">
+										<div class="col-md-4 col-sm-4 ">
+											<figure>
+												<img alt="" src="extra-images/blog_detail1.jpg">
+												<figcaption><a href="#"><i class="fa fa-search"></i></a></figcaption>
+											</figure>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<figure>
+												<img alt="" src="extra-images/blog_detail2.jpg">
+												<figcaption><a href="#"><i class="fa fa-search"></i></a></figcaption>
+											</figure>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<figure>
+												<img alt="" src="extra-images/blog_detail3.jpg">
+												<figcaption><a href="#"><i class="fa fa-search"></i></a></figcaption>
+											</figure>
+										</div>
+										<div class="col-md-4 col-sm-4 ">
+											<figure>
+												<img alt="" src="extra-images/blog_detail4.jpg">
+												<figcaption><a href="#"><i class="fa fa-search"></i></a></figcaption>
+											</figure>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<figure>
+												<img alt="" src="extra-images/blog_detail5.jpg">
+												<figcaption><a href="#"><i class="fa fa-search"></i></a></figcaption>
+											</figure>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<figure>
+												<img alt="" src="extra-images/blog_detail6.jpg">
+												<figcaption><a href="#"><i class="fa fa-search"></i></a></figcaption>
+											</figure>
+										</div>
+									</div>
+									<p class="margin-bottom">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. </p>
+								</div>
+								
+								<!--KF_BLOG DETAIL_DES END-->
+
+	    						<!--KF_BLOG ABOUT AUTHOR START-->
+	    						<div class="about_autor">
+	    							<figure><img src="extra-images/author.jpg" alt=""></figure>
+	    							<div class="about-autor_des">
+	    								<h6><a href="#">Alfred Marshal</a></h6>
+	    								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum quis bibendum.</p>
+	    								<ul class="autor_social">
+	    									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	    									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	    									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+	    									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+	    								</ul>
+	    							</div>
+	    						</div>
+	    						<!--KF_BLOG ABOUT AUTHOR END-->
+
+	 						</div>
+	 						<!-- COURSES DETAIL WRAP END -->
+	 					</div>
+
+	 					<!--KF_EDU_SIDEBAR_WRAP START-->
+    					<div class="col-md-4">
+    						<div class="kf-sidebar">
+
+    							<!--KF_SIDEBAR_SEARCH_WRAP START-->
+    							<div class="sidebar_register_wrap">
+    								<a class="apply" href="#">Apply Now</a>
+    								<ul class="sidebar_register_des">
+    									<li>Price : <span class="green">$6589</span></li>
+    									<li>Lessons : 12</li>
+    									<li>Length : 12 hours</li>
+    									<li>Level : Basic</li>
+    									<li>Price : $6589</li>
+    									<li>Category: Language</li>
+    									<li>
+
+    										<span>Rate :</span>
+    										 <div class="rating">
+												<span>☆</span>
+												<span>☆</span>
+												<span>☆</span>
+												<span>☆</span>
+												<span>☆</span>
+											</div>
+											<span>(69 Reviews)</span>
+    									</li>
+    								</ul>
+    							</div>
+    							<!--KF_SIDEBAR_SEARCH_WRAP END-->
+
+    							<!--KF_SIDEBAR_ARCHIVE_WRAP START-->
+    							<div class="widget teacher_outer_wrap">
+    								<h2>Teachers</h2>
+    								<div class="teacher_wrap">
+    									<figure><img src="extra-images/teacher-sidebar.jpg" alt=""/></figure>
+    									<div class="teacher_des">
+    										<h4>John Advert</h4>
+    										<small>English Professor</small>
+    									</div>
+    									<p>Aenean sollicitudin lorem quis bibendum auctor nisi elit consequat ipsum . Proin gravida nibh vel velit auctor aliquet.  Proin gravida nibh vel velit auctor aliquet. </p>
+    									<ul class="teacher_meta">
+    										<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+    										<li><a href="#"><i class="fa fa-skype"></i></a></li>
+    										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    									</ul>
+    								</div>
+
+    							</div>
+    							<!--KF_SIDEBAR_ARCHIVE_WRAP END-->
+    							<!--KF_SIDEBAR_ARCHIVE_WRAP START-->
+    							<div class="widget widget-archive ">
+    								<h2>Archives</h2>
+    								<ul class="sidebar_archive_des">
+    									<li>
+    										<a href=""><i class="fa fa-angle-right"></i>January</a>
+    									</li>
+    									<li>
+    										<a href=""><i class="fa fa-angle-right"></i>February</a>
+    									</li>
+    									<li>
+    										<a href=""><i class="fa fa-angle-right"></i>March</a>
+    									</li>
+    									<li>
+    										<a href=""><i class="fa fa-angle-right"></i>April</a>
+    									</li>
+    									<li>
+    										<a href=""><i class="fa fa-angle-right"></i>May</a>
+    									</li>
+    								</ul>
+    							</div>
+    							<!--KF_SIDEBAR_ARCHIVE_WRAP END-->
+
+
+    							<!--KF SIDEBAR RECENT POST WRAP START-->
+    							<div class="widget widget-recent-posts">
+    								<h2>Recent Posts</h2>
+    								<ul class="sidebar_rpost_des">
+                                    	<!--LIST ITEM START-->
+                                   		<li>
+                                            <figure>
+                                            	<img src="extra-images/archive-1.jpg" alt="">
+                                                <figcaption><a href="#"><i class="fa fa-search-plus"></i></a></figcaption>
+                                            </figure>
+                                            <div class="kode-text">
+                                                <h6><a href="#">Lorem ipsum dolor sit amet sint occaecat cupidatat</a></h6>
+                                                <span><i class="fa fa-clock-o"></i>10 Jan, 2016</span>
+                                            </div>
+    									</li>
+                                        <!--LIST ITEM START-->
+										<!--LIST ITEM START-->
+                                   		<li>
+                                            <figure>
+                                            	<img src="extra-images/archive-2.jpg" alt="">
+                                                <figcaption><a href="#"><i class="fa fa-search-plus"></i></a></figcaption>
+                                            </figure>
+                                            <div class="kode-text">
+                                                <h6><a href="#">Lorem ipsum dolor sit amet sint occaecat cupidatat</a></h6>
+                                                <span><i class="fa fa-clock-o"></i>10 Jan, 2016</span>
+                                            </div>
+    									</li>
+                                        <!--LIST ITEM START-->
+                                        <!--LIST ITEM START-->
+                                   		<li>
+                                            <figure>
+                                            	<img src="extra-images/archive-3.jpg" alt="">
+                                                <figcaption><a href="#"><i class="fa fa-search-plus"></i></a></figcaption>
+                                            </figure>
+                                            <div class="kode-text">
+                                                <h6><a href="#">Lorem ipsum dolor sit amet sint occaecat cupidatat</a></h6>
+                                                <span><i class="fa fa-clock-o"></i>10 Jan, 2016</span>
+                                            </div>
+    									</li>
+                                        <!--LIST ITEM START-->
+    								</ul>
+    							</div>
+    							<!--KF SIDEBAR RECENT POST WRAP END-->
+
+    							<!--KF EDU SIDEBAR COURSES CATEGORieS WRAP START-->
+	    						<div class="widget widget-categories">
+	    							<h2>categories</h2>
+									<ul>
+										<li><a href=""><i class="fa fa-caret-right"></i>Business &amp; Economics</a></li>
+										<li><a href=""><i class="fa fa-caret-right"></i>Politics &amp; History</a></li>
+										<li><a href=""><i class="fa fa-caret-right"></i>Medical Sciences &amp; Health</a></li>
+										<li><a href=""><i class="fa fa-caret-right"></i>Fine Arts</a></li>
+										<li><a href=""><i class="fa fa-caret-right"></i>Tourism &amp; Culture</a></li>
+										<li><a href=""><i class="fa fa-caret-right"></i>Sports</a></li>
+									</ul>
+	    						</div>
+	    						<!--KF EDU SIDEBAR COURSES CATEGORieS WRAP END-->
+
+	    						<!--KF SIDE BAR COURSES LIST WRAP START WRAP START-->
+	    						<div class="widget widget-courses-list">
+	    							<h2>Latest Courses</h2>
+	    							<ul>
+	    								<li>
+                                        	<figure>
+                                            	<img src="extra-images/courseslist1.jpg" alt=""/>
+	    										<a href="#">View Detail</a>
+	    									</figure>
+	    								</li>
+
+	    								<li>
+                                        	<figure>
+                                            	<img src="extra-images/courseslist2.jpg" alt=""/>
+	    										<a href="#">View Detail</a>
+	    									</figure>
+	    								</li>
+
+	    								<li>
+                                        	<figure>
+                                            	<img src="extra-images/courseslist3.jpg" alt=""/>
+	    										<a href="#">View Detail</a>
+	    									</figure>
+	    								</li>
+
+	    								<li>
+                                        	<figure>
+                                            	<img src="extra-images/courseslist4.jpg" alt=""/>
+	    										<a href="#">View Detail</a>
+	    									</figure>
+	    								</li>
+
+	    								<li>
+                                        	<figure>
+                                            	<img src="extra-images/courseslist5.jpg" alt=""/>
+	    										<a href="#">View Detail</a>
+	    									</figure>
+	    								</li>
+
+	    								<li>
+                                        	<figure>
+                                            	<img src="extra-images/courseslist6.jpg" alt=""/>
+	    										<a href="#">View Detail</a>
+	    									</figure>
+	    								</li>
+	    							</ul>
+	    						</div>
+	    						<!--KF SIDE BAR COURSES LIST WRAP START WRAP END-->
+
+	    						<!--KF SIDE BAR TAG CLOUD WRAP START-->
+	    						<div class="widget widget-tag-cloud">
+	    							<h2>Tags Cloud</h2>
+	    							<ul>
+	    								<li><a href="#">Science</a></li>
+	    								<li><a href="#">Development</a></li>
+	    								<li><a href="#">Fine Arts</a></li>
+	    								<li><a href="#">Research</a></li>
+	    								<li><a href="#">Admissions</a></li>
+	    								<li><a href="#">PHD</a></li>
+	    								<li><a href="#">History &amp; Politics</a></li>
+	    								<li><a href="#">Sports</a></li>
+	    							</ul>
+
+	    						</div>
+	    						<!--KF SIDE BAR TAG CLOUD WRAP END-->
+
+    						</div>
+    					</div>
+						<!--KF EDU SIDEBAR WRAP END-->
+	 				</div>
+	 			</div>
+	 		</section>
+    	</div>
+        <!--Content Wrap End-->
+        <!--NEWS LETTERS START-->
+		<div class="edu2_ft_topbar_wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="edu2_ft_topbar_des">
+							<h5>Subcribe weekly newsletter</h5>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="edu2_ft_topbar_des">
+							<form>
+								<input type="email" placeholder="Enter Valid Email Address">
+								<button><i class="fa fa-paper-plane"></i>Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--NEWS LETTERS END-->
+		<!--FOOTER START-->
+		<footer>
+			<!--EDU2 FOOTER CONTANT WRAP START-->
+				<div class="container">
+					<div class="row">
+						<!--EDU2 FOOTER CONTANT DES START-->
+						<div class="col-md-3">
+							<div class="widget widget-links">
+								<h5>Information</h5>
+								<ul>
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Our Stories</a></li>
+									<li><a href="#">My Account</a></li>
+									<li><a href="#">Our History</a></li>
+									<li><a href="#">Sprcialist Info</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--EDU2 FOOTER CONTANT DES END-->
+
+						<!--EDU2 FOOTER CONTANT DES START-->
+						<div class="col-md-3">
+							<div class="widget widget-links">
+								<h5>Student Help</h5>
+								<ul>
+									<li><a href="#">My Info</a></li>
+									<li><a href="#">My Questions</a></li>
+									<li><a href="#">F.A.Q</a></li>
+									<li><a href="#">Serch Courses</a></li>
+									<li><a href="#">Latest Informations</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--EDU2 FOOTER CONTANT DES END-->
+
+						<!--EDU2 FOOTER CONTANT DES START-->
+						<div class="col-md-3">
+							<div class="widget wiget-instagram">
+								<h5>Instagram</h5>
+								<ul>
+									<li><a href="#"><img src="extra-images/instagram-1.jpg" alt=""/></a></li>
+									<li><a href="#"><img src="extra-images/instagram-2.jpg" alt=""/></a></li>
+									<li><a href="#"><img src="extra-images/instagram-3.jpg" alt=""/></a></li>
+									<li><a href="#"><img src="extra-images/instagram-4.jpg" alt=""/></a></li>
+									<li><a href="#"><img src="extra-images/instagram-5.jpg" alt=""/></a></li>
+									<li><a href="#"><img src="extra-images/instagram-6.jpg" alt=""/></a></li>
+								</ul>
+							</div>
+						</div>
+						<!--EDU2 FOOTER CONTANT DES END-->
+
+						<!--EDU2 FOOTER CONTANT DES START-->
+						<div class="col-md-3">
+							<div class="widget widget-contact">
+								<h5>Contact</h5>
+								<ul>
+									<li>PO Box UN152468, 1 Street North, New Towm, California, USA</li>
+									<li>Phone : <a href="#"> 5 (012) 4565 789</a></li>
+									<li>Fax : <a href="#"> 5 (012) 4565 789</a></li>
+									<li>Email : <a href="#"> Info@info.com</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--EDU2 FOOTER CONTANT DES END-->
+					</div>
+				</div>
+		</footer>
+		<!--FOOTER END-->
+		<!--COPYRIGHTS START-->
+		<div class="edu2_copyright_wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="edu2_ft_logo_wrap">
+							<a href="#"><img src="extra-images/ft_logo.png" alt=""/></a>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="copyright_des">
+							<span>&copy; All Rights reserved. Powered By <a href="#">KODEFOREST</a></span>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<ul class="cards_wrap">
+							<li><a href="#"><img src="extra-images/visacard.png" alt=""/></a></li>
+							<li><a href="#"><img src="extra-images/mastercard.png" alt=""/></a></li>
+							<li><a href="#"><img src="extra-images/americancard.png" alt=""/></a></li>
+							<li><a href="#"><img src="extra-images/card.png" alt=""/></a></li>
+							<li><a href="#"><img src="extra-images/descoverycard.png" alt=""/></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--COPYRIGHTS START-->
+    </div>
+    <!--KF KODE WRAPPER WRAP END-->
+
+    
+
+	<!--Bootstrap core JavaScript-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--Bx-Slider JavaScript-->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!--Owl Carousel JavaScript-->
+	<script src="js/owl.carousel.min.js"></script>
+	<!--Pretty Photo JavaScript-->
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<!--Full Calender JavaScript-->
+	<script src="js/moment.min.js"></script>
+	<script src="js/fullcalendar.min.js"></script>
+	<script src="js/jquery.downCount.js"></script>
+	<!--Image Filterable JavaScript-->
+	<script src="js/jquery-filterable.js"></script>
+	<!--Accordian JavaScript-->
+	<script src="js/jquery.accordion.js"></script>
+	<!--Number Count (Waypoints) JavaScript-->
+	<script src="js/waypoints-min.js"></script>
+	<!--v ticker-->
+	<script src="js/jquery.vticker.min.js"></script>
+	<!--select menu-->
+	<script src="js/jquery.selectric.min.js"></script>
+	<!--Side Menu-->
+	<script src="js/jquery.sidr.min.js"></script>
+	<!--Custom JavaScript-->
+	<script src="js/custom.js"></script>
+
+    
+</body>
+</html>
